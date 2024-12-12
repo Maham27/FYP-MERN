@@ -1,0 +1,25 @@
+.notfound {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.notfound-text {
+  font-size: 3rem !important;
+}
+
+.fa-exclamation-triangle {
+  color: red;
+  font-size: 4rem !important;
+}
+
+.link-btn {
+  background: black;
+  padding: 15px;
+  color: white;
+  display: block;
+  max-width: 70px;
+  text-align: center;
+  margin: 10px auto;
+}

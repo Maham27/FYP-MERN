@@ -1,0 +1,77 @@
+.cancelled__appointments {
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+  padding: 30px;
+  gap: 30px;
+}
+.cancelled__appointment {
+  padding: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  gap: 10px;
+}
+.cancelled__appointments .heading {
+  font-size: 1.3rem;
+  font-family: var(--heading-font);
+}
+.cancelled__appointment .lawyer__info {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid gray; */
+}
+.cancelled__appointment .lawyer__info h3 {
+  font-size: 0.9rem;
+}
+.cancelled__appointment .lawyer__info h5 {
+  font-size: 0.8rem;
+}
+.cancelled__appointment .lawyer__info img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.cancelled__appointment .appointment__info {
+  flex: 0.6;
+  /* border: 1px solid green; */
+  padding: 10px;
+}
+.cancelled__appointment .appointment__info > h6 {
+  font-size: 0.8rem;
+}
+.cancelled__appointment .appointment__info > span {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  width: 100px;
+  color: gray;
+}
+.cancelled__appointment .options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cancelled__appointment .options > button {
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
+.cancelled__appointment .options > button > a {
+  text-decoration: none;
+  color: white;
+}
+.cancelled__appointment .options > button:hover {
+  background-color: rgb(129, 7, 7);
+}
+.cancelled__appointment .options > button .MuiSvgIcon-root {
+  color: white;
+}

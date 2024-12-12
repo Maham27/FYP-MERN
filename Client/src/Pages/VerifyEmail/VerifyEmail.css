@@ -1,0 +1,119 @@
+.VerifyEmail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+}
+.email__verified__success__container,
+.email__verified__failure__container,
+.email__verified__sent__container {
+  min-height: 60vh;
+  padding: 20px;
+  width: 50vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.email__verified__success__container > h1,
+.email__verified__failure__container > h1,
+.email__verified__sent__container > h1 {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.email__verified__success__container > h1 > span {
+  color: var(--first-color);
+}
+.email__verified__failure__container > h1 > span {
+  color: rgb(202, 34, 34);
+}
+.email__verified__sent__container > h1 > span {
+  color: gray;
+}
+.email__verified__success__container > .MuiSvgIcon-root {
+  font-size: 8rem;
+  color: var(--first-color);
+  display: block;
+}
+.email__verified__failure__container > .MuiSvgIcon-root {
+  font-size: 8rem;
+  color: rgb(202, 34, 34);
+  display: block;
+}
+.email__verified__sent__container > .MuiSvgIcon-root {
+  color: gray;
+  font-size: 8rem;
+}
+.email__verified__success__container > a {
+  width: max-content;
+}
+.email__verified__success__container > a > button {
+  width: 15vw;
+  padding: 10px;
+  background-color: var(--first-color);
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+.email__verified__success__container > a > button:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .email__verified__success__container,
+  .email__verified__failure__container {
+    min-height: 40vh;
+    padding: 20px;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .email__verified__success__container > h1,
+  .email__verified__failure__container > h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+  .email__verified__success__container > .MuiSvgIcon-root {
+    font-size: 6rem;
+  }
+  .email__verified__failure__container > .MuiSvgIcon-root {
+    font-size: 6rem;
+  }
+  .email__verified__sent__container > .MuiSvgIcon-root {
+    font-size: 6rem;
+  }
+  .email__verified__success__container > a {
+    width: max-content;
+  }
+  .email__verified__success__container > a > button {
+    width: 55vw;
+    padding: 10px;
+    background-color: var(--first-color);
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .email__verified__success__container > a > button:hover {
+    transform: scale(1.2);
+  }
+  .email__verified__success__container > h1,
+  .email__verified__failure__container > h1,
+  .email__verified__sent__container > h1 {
+    font-size: 1.2rem;
+  }
+  .email__verified__success__container,
+  .email__verified__failure__container,
+  .email__verified__sent__container {
+    justify-content: center;
+    gap: 10vh;
+    width: 80vw;
+  }
+}

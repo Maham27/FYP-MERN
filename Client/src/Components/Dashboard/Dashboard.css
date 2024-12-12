@@ -1,0 +1,90 @@
+:root {
+  --dashboard-primary-color: var(--colorthree);
+  --dashboard-secondary-color: var(--colorthree);
+  --dashboard-tertiory-color: rgba(0, 128, 0, 0.222);
+}
+
+/* .dashboard {
+    height: 90vh;
+    width: 20vw;
+    position: fixed;
+    background: var(--dashboard-tertiory-color);
+    top: 10vh;
+    left: 0;
+    overflow-y: scroll;
+  } */
+
+.dashboard {
+  height: 90vh;
+  width: 20vw;
+  position: fixed;
+  background: whitesmoke;
+  top: 10vh;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    display: none;
+  }
+}
+.host__raffle__dashboard {
+  height: 60%;
+  padding: 10px;
+}
+.host__raffle__dashboard > h2 {
+  font-size: 1.2rem;
+  height: 8vh;
+  margin-top: 5vh;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  color: black;
+}
+.host__raffle__dashboard > a {
+  text-decoration: none;
+  color: black;
+}
+.host__raffle__dashboard > a > h6 {
+  height: 6vh;
+  padding-left: 40px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.host__raffle__dashboard > a > h6:hover,
+.host__raffle__dashboard > a > h6.active {
+  color: white;
+  background: rgb(30, 29, 29);
+  cursor: pointer;
+}
+
+.dashboard__footer {
+  background: rgb(20, 19, 19);
+  padding: 10px 20px;
+  flex: 1;
+}
+.dashboard__footer > .nav__links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 10px;
+}
+.dashboard__footer > .nav__links > a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.dashboard__footer > .nav__links > a:hover {
+  cursor: pointer;
+  color: var(--light-blue);
+}
+.dashboard__footer > .social__links > a > .MuiSvgIcon-root {
+  color: white;
+  cursor: pointer;
+}
+.dashboard__footer > .social__links > a > .MuiSvgIcon-root:hover {
+  color: var(--colorthree);
+}

@@ -1,0 +1,93 @@
+.foooter {
+  width: 100%;
+  height: auto;
+  color: var(--colorone);
+  padding: 5vh 5vw;
+  background: var(--colorfour);
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column_one {
+  flex: 0.4;
+  padding: 10px;
+  height: 100%;
+}
+.column_two {
+  flex: 0.3;
+  height: 100%;
+}
+.column_three {
+  flex: 0.3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.column_three > img {
+  width: 200px;
+}
+.column_one > img {
+  width: 180px;
+  height: auto;
+}
+.column_one > h1 {
+  font-size: 1rem;
+}
+.column_one > p {
+  font-size: 0.8rem;
+  width: 30vw;
+  color: white;
+}
+.column_two {
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+}
+.column_two > a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--colorone);
+}
+
+.row_one {
+  display: flex;
+  justify-content: right;
+}
+.row_one > h4 {
+  text-align: left;
+  margin-right: 20px;
+}
+
+.row_one > .social__icons > a > .MuiSvgIcon-root {
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--colorone);
+}
+.row_two {
+  text-align: right;
+}
+@media (max-width: 760px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .column_one > h1 {
+    font-size: 1rem;
+  }
+  .column_one > p {
+    font-size: 0.8rem;
+    width: 80vw;
+  }
+  .column_two {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70vw;
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}

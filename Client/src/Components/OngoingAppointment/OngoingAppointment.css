@@ -1,0 +1,162 @@
+.ongoing__appointment {
+  width: 70vw;
+  min-height: 80vh;
+  /* border: 1px solid lightgray; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ongoing__appointment > .heading {
+  font-size: 1.3rem;
+  font-family: var(--heading-font);
+}
+
+.ongoing__appointment__container {
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  padding: 0 1vw;
+
+  /* border-top: 1px solid lightgray; */
+  margin-top: 2vh;
+  margin-left: 0%;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  position: relative;
+}
+.ongoing__appointment__container .user__info {
+  height: 100%;
+  flex: 3;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid lightgray;
+}
+.ongoing__appointment__container .user__info > h1 {
+  margin-bottom: 5vh;
+  font-size: 1.1rem;
+  color: black;
+}
+.ongoing__appointment__container .user__profile__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 3vh;
+  background-color: lightslategrey;
+}
+.ongoing__appointment__container .user__name {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 0px 0px;
+  color: black;
+}
+.ongoing__appointment__container .user__name span {
+  font-size: 0.9rem;
+}
+
+.ongoing__appointment__container .video__call__settings {
+  height: 100%;
+  width: 100%;
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3vw;
+  /*align-items: center;*/
+}
+.ongoing__appointment__container .appointment__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ongoing__appointment__container .appointment__details > h1 {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.ongoing__appointment__container .appointment__title,
+.ongoing__appointment__container .appointment__description {
+  margin: 1vh 1vw;
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.ongoing__appointment__container .appointment__title > .label,
+.ongoing__appointment__container .appointment__description > .label {
+  flex: 3 !important;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 800;
+  align-items: center;
+}
+.ongoing__appointment__container .appointment__title > .text,
+.ongoing__appointment__container .appointment__description > .text {
+  flex: 10 !important;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 10px;
+  max-width: 50vw;
+}
+.ongoing__appointment__container .appointment__title {
+  display: flex;
+}
+.ongoing__appointment__container .start__video__btn {
+  width: max-content;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--light-blue);
+  cursor: pointer;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+.ongoing__appointment__container .start__video__btn:hover {
+  background-color: white;
+  color: var(--dark-blue);
+  outline: 2px solid var(--dark-blue);
+}
+.ongoing__appointment__container .start__video__btn > .MuiSvgIcon-root {
+  color: white !important;
+  margin-right: 10px;
+}
+.ongoing__appointment__container .start__video__btn:hover > .MuiSvgIcon-root {
+  color: var(--dark-blue) !important;
+}
+.ongoing__appointment__container .video-chat-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh !important;
+  width: 100% !important;
+  background-color: black;
+  background: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.ongoing__appointment__container .video-chat-container > div {
+  position: sticky;
+}
+
+.appointments__not__found__info {
+  font-size: 1.3rem;
+  font-family: var(--heading-font);
+}

@@ -1,0 +1,83 @@
+.complete__profile__information {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* outline: 2px solid black; */
+  align-items: center;
+  padding-top: 5vh;
+}
+.complete__profile__information__header > h1 {
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+}
+
+.steps__loading__container {
+  padding: 10px;
+  margin-top: 5vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__loading__container > .checkpoint {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid lightgray;
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  z-index: 2;
+  background-color: white;
+}
+.steps__loading__container > .checkpoint.active {
+  color: white;
+
+  background-color: var(--light-blue);
+  font-family: var(--heading-font);
+  border-color: var(--light-blue);
+}
+.steps__loading__container > .loading__bar {
+  position: absolute;
+  height: 5px;
+  width: 94%;
+  top: 50%;
+  background-color: lightgray;
+  z-index: 1;
+}
+.steps__loading__container > .filler {
+  position: absolute;
+  height: 5px;
+  width: 22%;
+  top: 50%;
+  border: 1px solid lightgray;
+  z-index: 1;
+  background-color: var(--light-blue);
+}
+.steps__loading__container > .filler.step2 {
+  width: 70%;
+}
+.steps__loading__container > .filler.step3 {
+  width: 91%;
+}
+@media (max-width: 768px) {
+  .complete__profile__information__header {
+    width: 75vw;
+  }
+  .steps__loading__container > .loading__bar {
+    width: 90%;
+  }
+  .steps__loading__container > .filler.step3 {
+    width: 90%;
+  }
+  .complete__profile__information__header > h1 {
+    font-size: 1.3rem;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

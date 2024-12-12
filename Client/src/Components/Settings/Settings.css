@@ -1,0 +1,14 @@
+.profile__settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -13vh;
+  overflow-x: hidden;
+}
+.profile__settings .edit__profile__btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5vh;
+  margin-top: -6vh;
+}

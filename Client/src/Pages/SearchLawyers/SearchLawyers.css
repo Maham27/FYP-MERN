@@ -1,0 +1,367 @@
+.body__wrapper {
+  width: 90vw;
+  margin: 0 5vw;
+}
+.search__lawyers {
+  padding: 10vh 5vw;
+
+  /* background: white; */
+}
+/*********Search Container ************************/
+.search__container {
+  margin-top: 1vh;
+  height: auto;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /* border-bottom: 1px solid lightgray; */
+  /* background-color: whitesmoke; */
+  position: relative;
+}
+.search__container .search__heading {
+  padding: 7vh;
+}
+.search__container .search__heading > h1 {
+  font-size: 1.8rem;
+  font-family: var(--heading-font);
+  text-transform: capitalize;
+  word-spacing: 5px;
+}
+.input__area {
+  /* flex: 0.7; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 40vw;
+  background-color: #f7f8fb;
+  /* border: 3px solid var(--light-blue); */
+  padding: 10px;
+  border-radius: 5px;
+}
+.input__area > .MuiSvgIcon-root {
+  flex: 0.1;
+  width: max-content;
+  padding-left: 20px;
+  font-size: 1.9rem;
+  color: black;
+}
+.input__area > input {
+  flex: 0.9;
+  height: 80%;
+  min-height: 30px;
+  border: none;
+  background-color: #f7f8fb;
+  padding: 10px 3px;
+}
+.input__area > input:focus {
+  outline: none;
+}
+.input__area > input[type="text"]::placeholder {
+  color: gray;
+}
+.input__area > button {
+  flex: 0.2;
+  height: 80%;
+  background-color:black;
+  color: white;
+  min-height: 30px;
+}
+.sorting__area {
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 5vw;
+  bottom: 0;
+}
+.sorting__area > * {
+  padding: 10px;
+}
+
+.sorting__area > select {
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .search__raffles {
+    padding: 0 1vw;
+  }
+  .search__container {
+    margin-top: 1vh;
+    padding: 15px 0;
+  }
+
+  .input__area {
+    width: 80vw;
+    padding: 5px;
+  }
+  .input__area > input {
+    height: 4vh;
+  }
+  .input__area > input[type="text"]::placeholder {
+    color: gray;
+    font-size: 0.9rem;
+  }
+  .input__area > button {
+    flex: 0.2;
+    height: 4vh;
+  }
+  .sorting__area {
+    align-items: flex-start;
+  }
+  .sorting__area > * {
+    padding: 0;
+  }
+  .sorting__area > h6 {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    padding: 5px;
+  }
+  .sorting__area > select {
+    width: 60%;
+    font-size: small;
+  }
+}
+/******* RaffleItems css ***********************/
+.raffle__items {
+  margin-top: 5vh;
+  /* background-color: white; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
+  min-height: 50vh;
+}
+/* .lawyer__card {
+  margin-top: 4vh;
+  width: 250px;
+  height: 300px;
+  border: 2px solid var(--colorthree);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.lawyer__card > .profile__pic {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid var(--colorthree);
+}
+.lawyer__card > .name {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.lawyer__card > .qualification {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.lawyer__card > .profile__btn,
+.lawyer__card > .message__btn {
+  width: 60%;
+  border: 2px solid var(--colorthree);
+  background-color: white;
+  color: var(--colorthree);
+  font-size: 1 rem;
+  padding: 7px;
+}
+.lawyer__card > .profile__btn {
+  border: none;
+}
+
+.lawyer__card > .rating__container {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.lawyer__card > .message__btn {
+} */
+.lawyer__card {
+  margin-top: 4vh;
+  width: 80vw;
+  height: 250px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+.lawyer__card > .profile__pic {
+  flex: 0.2;
+
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.lawyer__card > .profile__pic > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+}
+.lawyer__card > .personal__info {
+  flex: 0.55;
+
+  padding: 10px;
+  cursor: pointer;
+}
+.name__and__rating {
+  display: flex;
+  gap: 20px;
+}
+.lawyer__card > .personal__info > .name__and__rating > .name {
+  font-size: 1.3rem;
+  font-family: var(--body-font);
+  color: white;
+}
+.rating__container {
+  float: right;
+  display: inline;
+}
+.rating__container .MuiSvgIcon-root {
+  color: goldenrod;
+}
+.lawyer__card > .personal__info > .education,
+.lawyer__card > .personal__info > .areas__of__practices,
+.lawyer__card > .personal__info > .bio {
+  font-size: 0.9rem;
+  font-family: var(--body-font);
+  color: whitesmoke;
+  display: inline-block;
+  width: 40vw;
+  margin-top: -10px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.lawyer__card > .action__buttons {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.lawyer__card > .action__buttons > button {
+  padding: 10px;
+  width: 80%;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  font-family: var(--heading-font);
+}
+.lawyer__card > .action__buttons > button > .MuiSvgIcon-root {
+  display: inline;
+}
+.lawyer__card .appointment__btn {
+  background-color: rgb(211, 194, 194);
+  color: rgb(49, 43, 43) ;
+  outline: 2px solid grey;
+}
+.lawyer__card .appointment__btn .MuiSvgIcon-root {
+  color: black;
+}
+.lawyer__card .message__btn {
+  background-color: rgb(211, 194, 194);
+  color: black;
+}
+.lawyer__card .message__btn .MuiSvgIcon-root {
+  color: black;
+}
+@media (max-width: 900px) {
+  .lawyer__card {
+    width: 95vw;
+  }
+}
+@media (max-width: 768px) {
+  .raffle__items {
+    padding: 10px;
+  }
+  .search__container {
+    margin-top: 10vh;
+  }
+  .lawyer__card {
+    margin-top: 4vh;
+    width: 95vw;
+    height: 60vh;
+    background-color: #f7f8fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    min-height: fit-content;
+  }
+  .lawyer__card > .personal__info > .education,
+  .lawyer__card > .personal__info > .areas__of__practices,
+  .lawyer__card > .personal__info > .bio {
+    width: 80vw;
+  }
+  .lawyer__card > .action__buttons > button {
+    padding: 10px;
+    width: 80vw;
+  }
+}
+/****react paginated css **************/
+a.page-link {
+  color: black !important;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff !important;
+  background-color: black !important;
+  border-color: black !important;
+  background-color: var(--dark-blue) !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.page-item.active {
+  box-shadow: none !important;
+  border: none !important;
+}
+.page-item:hover .page-link {
+  background-color: rgb(57, 181, 74, 0.2);
+}
+ul.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+}
+@media (max-width: 768px) {
+  ul.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0;
+  }
+  a.page-link {
+    color: black !important;
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 344px) {
+  a.page-link {
+    color: black !important;
+    font-size: 0.6rem !important;
+    padding: 5px !important;
+  }
+}

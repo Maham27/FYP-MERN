@@ -1,0 +1,44 @@
+.card-body{
+  
+
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  
+justify-content: center;
+margin: auto !important;
+  
+}
+.lawyer{
+margin: auto !important;
+}
+
+.card{
+  margin: auto;
+}
+
+h1{
+font-family: var(--heading-font);
+ word-spacing: 6px;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3vh;
+ padding-top: 20px;
+}
+.buttons {
+  display: flex;
+  margin: 30px 0;
+  gap: 20px;
+  padding: 20px;
+  
+}
+.main__action__btn {
+  background: whitesmoke;
+  color: black;
+  border-radius: 20px;
+  padding: 10px;
+  width: max-content;
+  border: none;
+  font-size: 0.9rem;
+  margin: auto;
+}

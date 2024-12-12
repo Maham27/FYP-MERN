@@ -1,0 +1,116 @@
+.top__rated__lawyers {
+  width: 100%;
+  min-height: 20vh;
+  padding: 20px 0;
+
+   background-color: black;
+ 
+}
+.top__rated__lawyers > h1 {
+  font-family: var(--heading-font);
+  color: white;
+  word-spacing: 6px;
+  font-size: 2rem;
+  text-align: center;
+}
+.top__rated__lawyers > div {
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+.splide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 80vw;
+  padding: 30px;
+ 
+  
+}
+.splide__slide {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color:black;
+  flex-direction: column;
+   background-color: #e5e5e5;
+   border-radius: 10px;
+ 
+}
+.splide__arrow svg {
+  color: white;
+  fill: white !important;
+  height: 1.7em !important;
+  transition: fill 0.2s linear;
+  width: 1.7em !important;
+}
+.splide__arrow--prev svg {
+  transform: scaleX(-1) translateX(55px) !important;
+}
+.splide__arrow--next svg {
+  transform: scaleX(1) translateX(72px) !important;
+}
+.splide__pagination__page.is-active {
+  background: var(--dark-blue) !important;
+}
+@media (max-width: 760px) {
+  .raffle__carousel > h1 {
+    font-size: 1.9rem;
+    padding: 10px;
+    width: 95vw;
+    text-align: center;
+  }
+  .splide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-blue);
+    width: 90vw;
+    padding: 5px;
+  }
+  .splide__slide {
+    width: 95%;
+    padding: 50px;
+  }
+  .splide__arrow--prev svg {
+    transform: scaleX(-1) translateX(55px);
+    display: none;
+  }
+  .splide__arrow--next svg {
+    transform: scaleX(1) translateX(55px);
+    display: none;
+  }
+
+  .splide__pagination__page.is-active {
+    background: var(--dark-blue) !important;
+  }
+}
+
+.carousel__lawyer__card {
+  height: 280px;
+  width: 400px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel__lawyer__card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.carousel__lawyer__card .data {
+  height: 80px;
+}
+.carousel__lawyer__card button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}

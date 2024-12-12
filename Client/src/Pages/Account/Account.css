@@ -1,0 +1,168 @@
+.account__page {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-top: 3vh;
+  flex-direction: column;
+}
+
+.account__page__user__info {
+  width: 50%;
+  min-height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.account__page__user__info > .profile__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+.account__page__user__info .css-2s90m6-MuiAvatar-root {
+  font-size: 3rem !important;
+}
+.upload__profile__photo__btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: grey;
+  font-size: 0.8rem;
+  margin-bottom: 2vh;
+}
+.account__page__user__info > .account__name,
+.account__page__user__info > .account__email {
+  font-size: 1.1rem;
+  padding: 5px;
+  margin: 5px;
+}
+.change__account__info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5vh;
+}
+.change__account__info > p {
+  cursor: pointer;
+}
+.change__account__info > p:hover {
+  color: var(--first-color);
+}
+
+.account__verification__container {
+  width: 50%;
+  padding: 20px;
+}
+.account__verification__container > div {
+  display: flex;
+  width: 100%;
+  min-height: 5vh;
+  align-items: center;
+}
+.account__verification__container > div > input {
+  border: 1px solid lightgray;
+  padding: 10px 8px;
+  margin: 10px;
+  width: 60%;
+  min-height: 50px !important;
+}
+.account__verification__container > div > button {
+  background: var(--first-color);
+  border: none;
+  font-size: 1rem;
+  color: white;
+  width: 30%;
+  padding: 10px 3px;
+}
+.account__verification__container > div > button:hover {
+  background-color: white;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
+}
+
+.account__email__verify {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 5vh 0;
+}
+.account__email__verify > h4 {
+  flex: 0.2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.account__email__verify > h6 {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.account__email__verify > button {
+  flex: 0.3;
+  background-color: var(--first-color);
+  color: white;
+  padding: 5px;
+  border: none;
+  transition: all 0.3s ease;
+  width: max-content;
+}
+.account__email__verify > button:hover {
+  transform: scale(1.2);
+}
+.email__sent__text {
+  background: white;
+  color: var(--first-color);
+  outline: "none";
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .account__email__verify {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 1vh 0;
+  }
+  .email__sent__text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.account__page .updateForm2 {
+  box-sizing: border-box;
+  margin-top: 5vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.account__page .updateForm2 > label {
+  margin: 0;
+  padding: 0;
+  margin-left: 2vw;
+}
+.account__page .updateForm2 > input {
+  margin: 0;
+  padding: 0;
+  margin-left: 2vw;
+  padding: 8px;
+  margin-top: 1vh;
+}
+.account__page .updateForm2 > button {
+  padding: 7px 12px;
+  border: none;
+  background-color: var(--dark-blue);
+  color: white;
+  cursor: pointer;
+  margin-top: 4vh;
+  border-radius: 5px;
+}

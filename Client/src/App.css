@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: Macan, Helvetica Neue, Helvetica, Arial, sans-serif !important; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400 !important;
+}
+:root {
+  /* --first-color: rgba(86, 186, 90, 255); */
+  --first-color: #39b54a;
+  /* --first-color: #39b54a; */
+  --second-color: #36b149;
+  --third-color: #32ac48;
+  --fourth-color: #2ba246;
+  --fifth-color: #1d8541;
+  --sixth-color: #006838;
+  /* --seventh-color: #02213d; */
+  --seventh-color: whitesmoke;
+  /*color palette one*/
+  /* --colorone: #f0e9d2;
+  --colortwo: #e6ddc4; */
+  --colorone: white;
+  --colortwo: whitesmoke;
+  --colorthree: #678983;
+  /* --colorthree: #4b7be5; */
+  /* --colorthree: #181d31; */
+  /*--colorfour: #181d31;*/
+  --colorfour: rgb(20, 19, 19);
+  /* --colorfour: #001e6c; */
+
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Montserrat", sans-serif;
+  --dark-blue: #001e6c;
+  /* --dark-blue: #3a36db; */
+  --light-blue: #4b7be5;
+  /* --light-blue: #3a36db; */
+  --menu-color: #809fb8;
+  --text-black: #5e6d55;
+}
+body {
+  background-color: var(--colorone) !important;
+}

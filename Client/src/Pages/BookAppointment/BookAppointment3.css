@@ -1,0 +1,92 @@
+.book__appointment__page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5vh;
+  padding-top: 15vh;
+  position: relative;
+}
+
+/********** basic info ****************/
+.book__appointment__page .basic__info {
+  margin-top: 4vh;
+  width: 60vw;
+  height: max-content;
+  /* border-bottom: 1px solid lightgray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 15px 40px;
+  margin: 0 auto;
+  background-color: #f8f7fb;
+  border-radius: 5px;
+}
+.book__appointment__page .basic__info > .profile__pic {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  flex: 0.2;
+}
+.book__appointment__page .basic__info > .profile__pic > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.book__appointment__page .basic__info > .personal__info {
+  flex: 0.8;
+  padding: 10px;
+  cursor: pointer;
+}
+.book__appointment__page .name__and__rating {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 0vh;
+}
+.book__appointment__page
+  .basic__info
+  > .personal__info
+  > .name__and__rating
+  > .name {
+  font-size: 1.3rem;
+  font-family: var(--body-font);
+}
+.book__appointment__page .rating__container {
+  float: right;
+  display: inline;
+}
+.book__appointment__page .rating__container .MuiSvgIcon-root {
+  color: gold;
+}
+.book__appointment__page .basic__info > h6 {
+  font-size: 0.9rem;
+  font-family: var(--body-font);
+  color: #46484b;
+  display: inline-block;
+  width: 40vw;
+  margin-top: -10px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/******* reviews ***********/
+.reviews__container {
+  width: 60vw;
+}
+
+/**********  book appointment time slots ***********/
+.book__appointment__time__slots__container {
+  width: 60vw;
+  min-height: 50vh;
+  /* background-color: #f8f7fb; */
+  padding: 20px;
+  border-radius: 5px;
+}

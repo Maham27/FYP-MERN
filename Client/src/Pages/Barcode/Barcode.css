@@ -1,0 +1,23 @@
+.main{
+    text-align: center;
+}
+.barheading{ 
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+      
+}
+.barsubheading{
+    text-align: center;
+    padding: 10px;
+}
+
+.btn{
+    background-color: black;
+    border-radius:20px;
+    border: none;
+    padding:10px 20px;
+    cursor: pointer;
+    color: white;
+}

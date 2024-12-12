@@ -1,0 +1,102 @@
+.upcoming__appointments {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  padding: 30px;
+  gap: 30px;
+  align-items: center;
+}
+.upcoming__appointment {
+  padding: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  position: relative;
+  width: 50vw;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.upcoming__appointment .remaining__time {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.upcoming__appointments > .heading {
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+}
+.upcoming__appointment .row__one {
+  display: flex;
+}
+.upcoming__appointment .row__one .lawyer__info {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid gray; */
+}
+.upcoming__appointment .row__one .lawyer__info img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.upcoming__appointment .row__one .lawyer__info h3 {
+  font-size: 1.1rem;
+}
+.upcoming__appointment .row__one .lawyer__info h5 {
+  font-size: 0.9rem;
+}
+.upcoming__appointment .row__one .appointment__info {
+  flex: 0.6;
+  /* border: 1px solid green; */
+  padding: 10px;
+}
+.upcoming__appointment .row__one .appointment__info > h6 {
+  font-size: 0.9rem;
+}
+.upcoming__appointment .row__one .appointment__info > span {
+  font-size: 1rem;
+  font-weight: bolder;
+  width: 100px;
+  font-family: var(--body-font);
+  color: gray;
+}
+.upcoming__appointment .row__two,
+.upcoming__appointment .row__three {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.upcoming__appointment .row__two div > .label {
+  color: gray;
+  font-size: 1rem;
+}
+.upcoming__appointment .row__two div > h6 {
+  font-size: 0.9rem;
+}
+
+.upcoming__appointment .row__three button {
+  padding: 10px 10px;
+  border: none;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  margin-top: 3vh;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upcoming__appointment .row__three button .MuiSvgIcon-root {
+  display: inline;
+  color: white;
+  font-size: 1rem;
+  margin: none !important;
+  padding: none !important;
+}
+.upcoming__appointment .row__three .chat__btn {
+  background-color: var(--dark-blue);
+}

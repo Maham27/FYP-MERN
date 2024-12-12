@@ -1,0 +1,105 @@
+.n__navbar {
+  height: 60px;
+  background-color: black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+ 
+}
+
+.n__navbar .n__logo {
+  font-family: var(--heading-font);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 0 !important;
+}
+.n__navbar .n__logo span {
+  font-family: var(--heading-font);
+  color: white;
+}
+.n__navbar .n__menus {
+  width: 50%;
+  
+  height: 100%;
+}
+
+.n__navbar .n__menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  
+}
+.n__navbar .n__menus h3 {
+  color: var(--text-black);
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-weight: 600 !important;
+  margin: 0 !important;
+  letter-spacing: 0.6px;
+}
+.n__navbar .n__menus h3:hover {
+  color: grey;
+}
+.n__navbar .n__login__options {
+  width: 25%;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+}
+.n__login__options .n__signup__btn {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--dark-blue);
+  color: white;
+  font-weight: 600px;
+  font-family: var(--heading-font);
+}
+
+.n__navbar .n__login__btn {
+  background-color: transparent;
+  color: var(--text-black);
+  border: none;
+  padding: 8px 18px;
+  font-weight: 600 !important;
+  font-family: var(--body-font);
+}
+
+.n__navbar .category__dropdown {
+  position: absolute;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  top: 60px;
+  padding: 20px 10px;
+  z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  background-color: black;
+  color: white;
+}
+.n__navbar .category__dropdown h1 {
+  font-size: 1rem;
+  margin-bottom: 2vh;
+}
+.n__navbar .category__dropdown .categories {
+  display: flex;
+  gap: 20px;
+}
+.n__navbar .category__dropdown .categories h3 {
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: white;
+}

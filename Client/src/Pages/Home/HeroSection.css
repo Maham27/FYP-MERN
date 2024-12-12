@@ -1,0 +1,142 @@
+.hero__section {
+  width: 100%;
+
+
+}
+.hero__section .home__header {
+  width: 100%;
+  height: max-content;
+  padding: 6vh 6vh;
+
+  display: flex;
+ 
+
+background-image: url('../../assets/images/p.jpeg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.hero__section .home__header > .header__content {
+  height: 100%;
+  flex: 0.5;
+  display: flex;
+ 
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.hero__section .home__header > .header__content > h3 {
+  color:white;
+  font-size: 1.5rem;
+  width: 100%;
+  line-height: 40px;
+  word-spacing: 10px;
+  /* text-transform: capitalize; */
+
+  font-family: var(--heading-font);
+  
+}
+
+.hero__section .home__header > .header__content > h6 {
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 400;
+  width: 38vw;
+  line-height: 30px;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+.hero__section .home__header > .header__content > .buttons {
+  display: flex;
+  margin: 30px 0;
+  gap: 20px;
+  padding: 20px;
+}
+.hero__section
+  .home__header
+  > .header__content
+  > .buttons
+  > .main__action__btn {
+  background: black;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  width: max-content;
+  border: none;
+  font-size: 0.9rem;
+}
+.hero__section
+  .home__header
+  > .header__content
+  > .buttons
+  > .main__action__btn.btn__two {
+  background-color:black;
+  color:white;
+  border: 1px solid black;
+}
+
+
+
+@media (max-width: 760px) {
+  .hero__section .home__container {
+    padding-top: 80px;
+  }
+  .hero__section .home__header {
+    flex-direction: column;
+  }
+  .hero__section .home__header > .header__content {
+    align-items: center;
+    padding-left: 0;
+  }
+  .hero__section .home__header > .header__content > h3 {
+    font-size: 1.4rem;
+    width: 90%;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+  }
+  .hero__section .home__header > .header__content > h3 > span {
+    color: var(--first-color);
+  }
+  .hero__section .home__header > .header__content > h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 5vh;
+    width: 90%;
+    margin-top: 1vh;
+    text-align: center;
+    padding: 5px 20px;
+  }
+
+
+  .hero__section .home__header > .header__content > .buttons {
+    margin: 20px 0;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 10px;
+  }
+
+  .hero__section .home__header > .header__content > .buttons > button {
+    font-size: 1rem;
+    padding: 5px 5px;
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: white;
+    width: 36vw !important;
+  }
+  .hero__section .home__header > .header__content > button > .MuiSvgIcon-root {
+    color: white;
+    font-size: xx-large;
+    display: block !important;
+    width: max-content;
+    margin-left: 10px;
+  }
+}

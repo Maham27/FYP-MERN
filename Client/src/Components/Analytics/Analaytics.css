@@ -1,0 +1,47 @@
+.profile__analytics {
+  padding: 20px 10px;
+  width: 80%;
+}
+.profile__analytics > h1 {
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+  margin-bottom: 4vh;
+}
+.profile__analytics .row__one {
+  margin-bottom: 8vh;
+}
+.profile__analytics .row__one div {
+  display: flex;
+  /* margin-bottom: 10vh; */
+}
+.profile__analytics .row__one div h5 {
+  width: 40%;
+  font-size: 1.1rem;
+}
+.profile__analytics .graph__container {
+  border: 1px solid lightgray;
+  width: 60%;
+  height: 40vh;
+  margin: 5vh 0;
+}
+.profile__analytics .graph__options {
+  margin: 5vh 0;
+}
+.profile__analytics .graph__options .checkbox__container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.earning__analytics .recharts-legend-item.legend-item-0 {
+  margin-top: 15vh !important;
+  margin-left: 16vw !important;
+}
+.profile__analytics .recharts-legend-item.legend-item-0 {
+  margin-top: 5vh;
+  margin-left: 4vw;
+}
+
+.earning__analytics .row__one div {
+  display: flex;
+  margin-bottom: 10vh;
+}

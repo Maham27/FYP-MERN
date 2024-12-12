@@ -1,0 +1,192 @@
+/* .book__appointment__page {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 13vh 0;
+}
+.book__appointment__form {
+  min-height: 50vh;
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+}
+.book__appointment__form > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.book__appointment__form form {
+  padding: 50px;
+}
+.book__appointment__form form > div {
+  margin: 30px 0;
+}
+.book__appointment__form .radio__btns {
+  margin-bottom: 5vh;
+  width: 20vw;
+}
+.book__appointment__form label.btn {
+ 
+}
+.book__appointment__form label {
+  position: relative !important;
+  padding: 10px 0 !important;
+  margin: 0 !important;
+  padding-top: 0 !important;
+}
+.book__appointment__form input {
+  position: relative !important;
+  
+  margin-top: -10px !important;
+}
+.book__appointment__form .agreeTerms__container {
+  background-color: tomato;
+  opacity: 0 !important;
+  box-sizing: border-box;
+  height: max-content;
+  position: relative;
+}
+.book__appointment__form .agreeTerms__container > label {
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute;
+}
+.book__appointment__form .agreeTerms__checkbox {
+  background-color: violet;
+}
+.book__appointment__form .dateInput {
+  display: block;
+  width: 50vw;
+  height: 30vh;
+  box-sizing: border-box;
+}
+.book__appointment__form.dateInput > * {
+  position: relative !important;
+}
+.book__appointment__form .react-datetime-picker__inputGroup {
+  display: flex !important;
+}
+.book__appointment__form button {
+  background-color: var(--colorthree);
+  border-color: var(--colorthree);
+  background-color: var(--colorthree);
+  color: white;
+}
+.book__appointment__form button:hover {
+  background-color: var(--colorfour);
+  border-color: var(--colorfour);
+}
+
+.book__appointment__form button:active {
+  background-color: var(--second-color);
+}
+.book__appointment__form button:focus {
+  background-color: var(--sixth-color);
+  box-shadow: none !important;
+  border-color: var(--sixth-color);
+}
+.book__appointment__form .radio__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book__appointment__form .radio__buttons > div {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.book__appointment__form .radio__buttons > div > input {
+  width: 40px;
+  margin-right: 10px;
+  margin-top: 3px !important;
+}
+.book__appointment__form .radio__buttons > div > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.checkmark {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+
+.book__appointment__form .radio__buttons > div:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.book__appointment__form .radio__buttons > div > input:checked ~ .checkmark {
+  background-color: var(--colorthree);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.book__appointment__form
+  .radio__buttons
+  > div
+  > input:checked
+  ~ .checkmark:after {
+  display: block;
+}
+
+
+.book__appointment__form .radio__buttons > div > .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.error__para {
+  color: rgb(218, 2, 2);
+  display: block;
+}
+@media (max-width: 768px) {
+  .book__appointment__form {
+    min-height: 50vh;
+    width: 95%;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 10vh;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 3%;
+  }
+  .book__appointment__form > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .book__appointment__form form {
+    padding: 20px 10px;
+  }
+  .book__appointment__form form > div {
+    margin: 30px 0;
+  }
+}
+.react-time-picker {
+  display: block;
+  width: 20vw;
+}
+.book__appointment__form .col {
+  margin: 0;
+} */

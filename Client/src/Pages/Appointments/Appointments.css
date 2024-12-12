@@ -1,0 +1,51 @@
+/* appointments{
+  margin-left: 20vw;
+  margin-top: 10vh;
+  width: 80vw;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: white;
+} */
+.appointments {
+  margin-right: 20vw;
+  margin-top: 10vh;
+  width: 80vw;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+@media (max-width: 768px) {
+  .appointments {
+    margin: 0 !important;
+    width: 100vw;
+    padding: 0px !important;
+  }
+}
+/***************** host raffle info box*******************/
+.host__raffle__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 20%;
+}
+.host__raffle__info > h1 {
+  margin-bottom: 5vh;
+}
+.host__raffle__info > p {
+  text-align: justify !important;
+}
+.host__raffle__info > button {
+  padding: 5px;
+  background-color: var(--first-color);
+  color: white;
+  margin-top: 5vh;
+  border: none;
+  width: 50%;
+}

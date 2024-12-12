@@ -1,0 +1,448 @@
+:root {
+  --color1: rgba(228, 0, 0, 0.884);
+  /* --color2: var(--dark-blue);
+  --color3: var(--light-blue); */
+  --color2: #e5e5e5;
+  --color3: var(--dark-blue);
+}
+.unreadMsgCount {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 23px;
+  width: 23px;
+  background-color: rgb(250, 18, 18);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3px;
+}
+.messenger {
+  background-color: var(--colorone);
+  padding: 10px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: -5vh;
+  height: 90vh;
+  overflow: hidden;
+  margin-top: 5vh;
+}
+.messenger.lawyer__screen {
+  background-color: var(--colorone);
+  padding: 10px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: -3px;
+
+  height: 100%;
+  width: 100%;
+  padding-top: 0 !important;
+  overflow: hidden;
+}
+/**** Css for conversations Box **************/
+.messenger .conversations__box {
+  background-color: var(--color2);
+  padding: 20px 0px;
+  margin: 0px 0px;
+  /*flex: 3.5;*/
+  flex: 0.3;
+  color: var(--color1);
+  height: 90vh;
+}
+.messenger.lawyer__screen .conversations__box {
+  background-color: var(--color2);
+  padding: 20px 0px;
+  margin: 0px 0px;
+  /*flex: 3.5;*/
+  flex: 0.33;
+  color: var(--color1);
+  height: 100%;
+}
+
+.messenger .user__info {
+  color: var(--color1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.messenger .user__info > .avatar {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+.messenger.lawyer__screen .user__info > .avatar {
+  width: 35px;
+  height: 35px;
+}
+.messenger .user__info > h2 {
+  font-size: 18px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4px;
+  color: black;
+  font-family: var(--body-font);
+}
+.messenger.lawyer__screen .user__info > h2 {
+  font-size: 1rem;
+}
+.messenger .header {
+  background-color: var(--color1);
+  padding: 10px 20px;
+  height: max-content;
+}
+.messenger .header__title {
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+}
+.messenger.lawyer__screen .header__title {
+  font-size: 1rem;
+}
+.messenger .header__search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: max-content;
+}
+.messenger .header__search > .searchBtn {
+  width: 40px !important;
+  height: 0px !important;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.messenger .header__search > input {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: black;
+  background-color: var(--color2);
+  height: 30px;
+  border: 1px solid lightgray;
+}
+.messenger .conversations {
+  background-color: var(--color2);
+  padding: 15px 5px;
+  height: 55vh;
+  overflow-y: scroll;
+}
+.conversations::-webkit-scrollbar {
+  width: 1em;
+}
+
+.messenger.conversations::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.messenger .conversations::-webkit-scrollbar-thumb {
+  background-color: var(--color1);
+  outline: 1px solid slategrey;
+}
+.messenger .conversation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid lightgray;
+}
+.messenger .conversation:hover {
+  background-color: var(--light-blue);
+  color: white;
+}
+.messenger .conversation:hover h3 {
+  color: white;
+}
+.messenger .conversation > .avatar {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.messenger.lawyer__screen .conversation > .avatar {
+  width: 35px;
+  height: 35px;
+}
+.messenger .conversation > h3 {
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 7px;
+  color: black;
+}
+.messenger.lawyer__screen .conversation > h3 {
+  font-size: 1rem;
+}
+.conversation > button > .MuiSvgIcon-root {
+  margin-left: auto;
+  color: rgb(175, 0, 0);
+}
+.messenger .conversation > button {
+  width: max-content !important;
+  margin-left: auto;
+}
+.conversation > button > .MuiSvgIcon-root:hover {
+  margin-left: auto;
+  color: rgb(175, 0, 0);
+  transform: scale(1.5, 1.5);
+}
+
+/***** CSS for Chat Box   ***********/
+/* .chat__box {
+  background-color: var(--color3);
+  padding: 20px;
+  flex: 9.5;
+} */
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+  height: 90vh;
+  background-color: var(--color2);
+  margin-left: 10px;
+  color: var(--color1);
+  position: relative;
+}
+.messenger.lawyer__screen .chat {
+  flex: 1;
+  height: 100%;
+}
+.nochat-text {
+  position: absolute;
+  top: 10%;
+  font-size: 40px;
+  color: gray;
+  cursor: default;
+  margin-left: 30px;
+}
+.messenger.lawyer__screen .nochat-text {
+  font-size: 30px;
+}
+.chat__header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+.messenger.lawyer__screen .chat__headerInfo {
+  margin-left: 5px;
+}
+/* .chat__headerRight {
+  width: 30px;
+} */
+.chat__header > .avatar {
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.chat__headerInfo > h3 {
+  padding: 10px;
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.messenger.lawyer__screen .chat__headerInfo > h3 {
+  font-size: 1rem;
+}
+.chat__headerInfo > p {
+  color: gray;
+}
+.chat__body {
+  flex: 1;
+  /*background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--color1);
+  padding: 30px;
+  overflow: scroll;
+}
+
+.chat__body::-webkit-scrollbar {
+  width: 1em;
+}
+
+.chat__body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.chat__body::-webkit-scrollbar-thumb {
+  background-color: var(--color2);
+  outline: 1px solid slategrey;
+}
+.chat__message {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: lightgray;
+  margin-bottom: 30px;
+  color: black;
+  min-width: 8vw;
+}
+.chat__reciever {
+  margin-left: auto;
+  background-color: var(--light-blue);
+  color: white;
+}
+.chat__timestamp {
+  margin-left: 10px;
+  font-size: xx-small;
+}
+.chat__name {
+  position: absolute;
+  top: -18px;
+  font-weight: 800;
+  font-size: small;
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  color: black;
+}
+.chat__footer {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  height: 62px !important;
+  border-top: 1px solid lightgray !important;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+}
+.chat__footer > .form {
+  flex: 1 !important;
+  display: flex !important;
+}
+.chat__footer > .form > input {
+  flex: 1 !important;
+  border-radius: 30px !important ;
+  outline: none !important;
+  padding: 10px !important;
+  border: 1px solid lightgray !important;
+  background-color: var(--color1) !important;
+  color: var(--color2);
+  padding: 20px !important;
+  height: 10px;
+  color: black;
+}
+.chat__footer > .form > button {
+  display: block !important;
+  margin-top: 5px;
+  height: 40px;
+  padding: 5px;
+  border: none;
+  margin-left: 4px;
+  border-radius: 5px;
+}
+.chat__footer > .emojiBtn > .MuiSvgIcon-root {
+  margin-left: 20px;
+  color: black;
+}
+.chat__footer > .form > .showImgInputBtn {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat__footer > .form > .showImgInputBtn > .MuiSvgIcon-root {
+  color: gray;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.chat__footer > .MuiSvgIcon-root {
+  padding: 10px !important;
+  color: black !important;
+}
+.chat__footer2 {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 62px !important;
+  border-top: 1px solid lightgray !important;
+  padding: 0px 0px;
+  margin-bottom: 20px;
+}
+.chat__footer2 > .form {
+  flex: 0.5 !important;
+  display: flex !important;
+  padding: 0px !important;
+  height: 20px !important;
+  margin-top: -25px;
+}
+.chat__footer2 > .form > input {
+  flex: 1 !important;
+  border-radius: 10px !important ;
+  outline: none !important;
+  padding: 10px !important;
+  border: 1px solid lightgray !important;
+  background-color: var(--color1) !important;
+  color: var(--color2);
+  padding: 10px !important;
+  width: 20vw !important;
+  height: max-content;
+  color: black;
+}
+.chat__footer2 > .form > button {
+  display: block !important;
+  width: max-content;
+  padding: 10px;
+  margin-left: 9px;
+  margin-top: 3px;
+  color: black;
+  height: 45px;
+  border: 2px solid lightgray;
+}
+.chat__footer2 .MuiSvgIcon-root {
+  padding: 0px !important;
+
+  height: 20px;
+  margin-left: 10px;
+  color: black;
+}
+.emojiBtn {
+  width: 50px;
+  padding: 0px 0px;
+}
+.emojiBtn > .MuiSvgIcon-root {
+  color: gray !important;
+}
+@media (min-width: 768px) {
+  .messenger .MuiSvgIcon-root {
+    display: inline !important;
+  }
+}
+@media (max-width: 768px) {
+  .conversations__box,
+  .chat {
+    flex: 1;
+  }
+}

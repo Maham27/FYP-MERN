@@ -1,0 +1,98 @@
+.category__bar {
+  width: 100vw;
+
+  margin-left: -6%;
+  border-bottom: 1px solid lightgray;
+  background-color: var(--first-color);
+  margin-top: -34px;
+  min-height: 40px;
+}
+
+.category__bar .splide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  width: 100vw;
+  padding: 2px 20px;
+  padding-top: 7px;
+  width: 110% !important
+  ;
+  margin: 0 auto;
+}
+.category__bar .splide__slide {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  color: black;
+  flex-direction: column;
+  padding: 5px 20px;
+  width: max-content !important;
+  height: 10vh;
+}
+
+.category__bar .splide__slide > h1 {
+  font-size: 0.9rem;
+  color: white;
+  font-style: inherit;
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+.category__bar .splide__slide > h1:hover {
+  transform: scale(1.1);
+}
+.category__bar .splide__arrow svg {
+  color: black !important ;
+  display: inline !important;
+  fill: black;
+  size: 0.7rem;
+}
+
+.category__bar .splide__arrow--prev svg {
+  transform: scaleX(-1) translateX(2000px) !important;
+  color: black !important;
+  display: inline !important;
+  display: none;
+}
+.category__bar .splide__arrow--next svg {
+  transform: scaleX(1) translateX(40px) !important;
+  color: black !important;
+  display: inline !important;
+}
+.category__bar .splide__pagination__page {
+  display: none;
+}
+@media (max-width: 768px) {
+  .category__bar {
+    margin-top: 10vh;
+    margin-left: -6px;
+  }
+
+  .category__bar .splide__slide > h1 {
+    font-size: 0.8rem;
+  }
+  .category__bar .splide {
+    height: 7vh;
+    min-height: 40px;
+  }
+
+  .category__bar .splide__arrow--next svg {
+    transform: scaleX(1) translateX(10px) !important;
+    color: black !important;
+    display: inline !important;
+    font-size: 0.7rem !important;
+  }
+  .category__bar .splide__arrow--next svg {
+    transform: scaleX(1) translateX(30px) !important;
+    font-size: 0.7rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .category__bar .splide__arrow--next svg {
+    font-size: 0.7rem !important;
+  }
+}
